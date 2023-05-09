@@ -1,14 +1,17 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "0.0.1",
   "description": "second project",
+  "engines": {
+    "node": ">=18"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitriy Kasyan",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",

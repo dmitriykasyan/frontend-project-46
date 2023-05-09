@@ -1,4 +1,20 @@
-import genDiff from '@hexlet/code';
+#!/usr/bin/env node
 
-const diff = genDiff(filepath1, filepath1);
+import { program } from 'commander';
+import genDiff from './module.js'; // '@hexlet/code' module.js - null function
+
+const diff = genDiff(); // filepath1, filepath2
 console.log(diff);
+
+program
+  .name('gendiff')
+  .version('0.0.1')
+  .description('Compares two configuration files and shows a difference.')
+  .argument('filepath1')
+  .argument('filepath2')
+  .option('-f, --format <type>', 'output format')
+  .action(() => { // filepath1, filepath2, options
+    diff(); // filepath1, filepath2, options.format
+  });
+
+program.parse();
