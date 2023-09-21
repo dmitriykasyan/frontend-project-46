@@ -1,5 +1,8 @@
 install:
 	npm ci
 	
-make init:
+init:
 	npx eslint .
+
+# gendiff:
+# 	node gendiff.js

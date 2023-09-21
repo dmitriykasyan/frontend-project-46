@@ -4,7 +4,7 @@ import { program } from 'commander';
 import genDiff from './module.js'; // '@hexlet/code' module.js - null function
 
 const diff = genDiff(); // filepath1, filepath2
-console.log(diff);
+// console.log(diff);
 
 program
   .name('gendiff')
@@ -13,7 +13,8 @@ program
   .argument('filepath1')
   .argument('filepath2')
   .option('-f, --format <type>', 'output format')
-  .action(() => { // filepath1, filepath2, options
+  .action(() => {
+    // filepath1, filepath2, options
     diff(); // filepath1, filepath2, options.format
   });
 
