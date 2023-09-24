@@ -5,13 +5,16 @@
   "engines": {
     "node": ">=18"
   },
-  "main": "package.js",
+  "main": "gendiff.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitriy Kasyan",
   "license": "ISC",
   "type": "module",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "dependencies": {
     "commander": "^10.0.1",
     "lodash": "^4.17.21"

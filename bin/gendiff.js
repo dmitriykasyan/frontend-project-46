@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import genDiff from './module.js'; // '@hexlet/code' module.js - null function
+import genDiff from '../module.js'; // '@hexlet/code' module.js - null function
 
 const diff = genDiff(); // filepath1, filepath2
 // console.log(diff);
